@@ -4,5 +4,5 @@ let age=20;
 let object;
 
 console.log(typeof name);
-console.log(typeof object);
+// console.log(typeof object);
 
