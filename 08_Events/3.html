@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: cadetblue;">
+    <h1>chai ayr java script</h1>
+    <button id="start">Start</button>
+    <button id="stop">stop</button>
+
+</body>
+<script>
+    const saydate=function(str){
+          console.log(str,Date.now());
+          
+    }
+     let intervalid;
+
+    document.getElementById("start").onclick=function(){
+       intervalid= setInterval(saydate,1000 ,"hi"); 
+    }
+    document.getElementById("stop").onclick=function(){
+       
+        clearInterval(intervalid);
+        intervalid=null;
+          
+    }
+ 
+     clearInterval(intervalid);
+      
+    
+</script>
+</html>
